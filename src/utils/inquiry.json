@@ -1,0 +1,273 @@
+[
+    {
+        "product": "Hot Rolled (HR)",
+        "categories": [
+            "Sheets",
+            "Packets",
+            "Coils",
+            "Slitted Coils",
+            "C Purlin and Z Purlin"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Slitting Process"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Hot Rolled Pickled & Oiled (HRPO)",
+        "categories": [
+            "Sheets",
+            "Packets",
+            "Coils",
+            "Slitted Coils"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Slitting Process"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Cold Rolled (CR)",
+        "categories": [
+            "Sheets",
+            "Packets",
+            "Coils",
+            "Slitted Coils"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Slitting Process"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "POSCO"
+        ]
+    },
+    {
+        "product": "Cold Rolled Closed Annealed (CRCA)",
+        "categories": [
+            "Sheets",
+            "Packets",
+            "Coils",
+            "Slitted Coils"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Slitting Process"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "POSCO"
+        ]
+    },
+    {
+        "product": "Galvanized Iron (GI) / Galvanized Plates (GP)",
+        "categories": [
+            "Sheets",
+            "Packets",
+            "Coils",
+            "Slitted Coils",
+            "C Purlin and Z Purlin"
+        ],
+        "services": [
+            "Cut-To-Length",
+            "Slitting Process",
+            "Corrugation / Profiling",
+            "C Purlin",
+            "Z Purlin"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Pre-Painted Galvanized Iron (PPGI)",
+        "categories": [
+            "Coils",
+            "Roofing Sheets",
+            "Slitted Coils"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Corrugated Sheets",
+            "Profiled Sheets"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Pre-Painted Galvalume( PPGL)",
+        "categories": [
+            "Coils",
+            "Roofing Sheets"
+        ],
+        "services": [
+            "Coil – to – Coil",
+            "Cut-To-Length",
+            "Corrugated Sheets",
+            "Profiled Sheets"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Mill Plates (PMP Plates)",
+        "categories": [
+            "Sheets",
+            "Coils",
+            "Slitted Coils",
+            "Packets"
+        ],
+        "services": [
+            "Cut-To-Length"
+        ],
+        "brands": [
+            "AMNS",
+            "JSW",
+            "JSPL",
+            "TATA",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Polycarbonate Sheets",
+        "categories": [
+            "Polycarbonate Sheets"
+        ],
+        "services": [
+            "Cut-To-Length"
+        ]
+    },
+    {
+        "product": "Mild Steel Structures",
+        "categories": [
+            "T-Sections (Angles)",
+            "L-Section Equal Angles",
+            "L-Section Unequal Angles",
+            "C/U - Channels",
+            "TMT Bars",
+            "Flat Bars",
+            "Round Bars / Rods",
+            "I-Beams / Girders",
+            "Narrow Parallel Flange Beam (NPB)",
+            "Wide Parallel Flange Beam (WPB)"
+        ],
+        "services": [
+            "Cut-To-Length"
+        ],
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "JSP",
+            "JSW",
+            "SAIL",
+            "VIZAG",
+            "TATA",
+            "AMNS"
+        ],
+        "note": "MOQ = 10 M.T. and extra Charges Applicable"
+    },
+    {
+        "product": "Mild Steel Pipes",
+        "categories": [
+            "ERW Pipe",
+            "Square Pipes",
+            "Round Pipes",
+            "Square Hollow Sections",
+            "Rectangle Hollow Sections",
+            "Circular Hollow Sections"
+        ],
+        "services": [
+            "Cut-To-Length"
+        ],
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "JSP",
+            "JSW",
+            "SAIL",
+            "VIZAG",
+            "TATA",
+            "AMNS"
+        ],
+        "note": "MOQ = 10 M.T. and extra Charges Applicable"
+    },
+    {
+        "product": "Nominal Bore Pipe",
+        "categories": [
+            "Nominal Bore Pipes"
+        ],
+        "services": [],
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Pipe Products)",
+            "Available On Demand",
+            "ASIAN",
+            "APOLLO",
+            "TATA",
+            "JSW",
+            "GOODLUCK"
+        ]
+    },
+    {
+        "product": "ERW Pipe",
+        "categories": [
+            "ERW Pipe"
+        ],
+        "services": [
+            "Cut-To-Length"
+        ],
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Pipe Products)",
+            "Available On Demand",
+            "ASIAN",
+            "APOLLO",
+            "TATA",
+            "JSW",
+            "GOODLUCK"
+        ],
+        "note": "MOQ = 10 M.T. and extra Charges Applicable"
+    }
+]

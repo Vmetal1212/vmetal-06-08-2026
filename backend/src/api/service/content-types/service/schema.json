@@ -1,0 +1,124 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title1": {
+      "type": "string",
+      "required": true
+    },
+    "title2": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle1": {
+      "type": "string",
+      "required": true
+    },
+    "title3": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "material": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "string"
+    },
+    "coilOuterDiameter": {
+      "type": "string"
+    },
+    "coilInnerDiameter": {
+      "type": "string"
+    },
+    "maxCoilWeight": {
+      "type": "string"
+    },
+    "coilWidth": {
+      "type": "string"
+    },
+    "stackerCapacity": {
+      "type": "string"
+    },
+    "sheetLengthMin": {
+      "type": "string"
+    },
+    "sheetLengthMax": {
+      "type": "string"
+    },
+    "accuracy": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "services"
+    },
+    "newDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "meta_title": {
+      "type": "text"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "service"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Allow all crawlers access to all content
+
+User-agent: *
+Disallow: /uploads/
+
+Sitemap: https://www.vmetalsolutions.com/sitemap.xml
+

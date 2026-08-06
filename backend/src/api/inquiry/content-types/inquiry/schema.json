@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "singularName": "inquiry",
+    "pluralName": "inquiries",
+    "displayName": "Inquiry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "contactNumber": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "length": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "attachment": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

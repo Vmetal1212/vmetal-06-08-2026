@@ -1,0 +1,274 @@
+.footer {
+    height: 31vw;
+    width: 100%;
+    background-color: var(--accent);
+    color: var(--bg-color);
+    /* padding-bottom: 0vw !important; */
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: -999;
+}
+
+.footer_container {
+    height: 100%;
+    position: absolute;
+    padding: 2.5vw 5vw;
+}
+
+.footer img {
+    width: 6vw;
+    margin-top: -.5vw;
+}
+
+.footer h5 {
+    font-family: medium;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    position: relative;
+    width: fit-content;
+}
+
+.footer h5::before {
+    content: "";
+    height: 1px;
+    width: 60%;
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    background-color: var(--accent2);
+    transition: all .5s ease;
+}
+
+.footer .icon {
+    font-size: 1.25vw;
+    background-color: var(--accent2);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--bg-color);
+    padding: .7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 9px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: var(--bg-color);
+    letter-spacing: .5px;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 1.1vw;
+    font-weight: 300;
+    opacity: 1;
+
+}
+
+.footer ul li a:hover {
+    color: var(--bg-color);
+}
+
+.footer ul li a::before {
+    content: "";
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    background-color: var(--accent2);
+    transition: all .5s ease;
+}
+
+.footer ul li a:hover::before {
+    width: 100%;
+}
+
+.footer ul li a.active {
+    color: var(--bg-color);
+}
+
+.footer ul li a.active::before {
+    width: 100%;
+}
+
+.footer .socialMedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer .socialMedia li a::before {
+    display: none;
+}
+
+.footer .socialMedia a {
+    background-color: var(--accent2);
+    width: 2.8vw;
+    height: 2.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.footer .socialMedia a .socialIcon {
+    font-size: 1.5vw;
+    color: var(--accent);
+    transition: all .5s ease;
+}
+
+.footer .socialMedia a .socialIcon::before {
+    display: none;
+}
+
+.footer .socialMedia .socialIcon:hover {
+    color: var(--accent) !important;
+}
+
+.footer .socialIcon:hover {
+    color: var(--accent2);
+}
+
+.footer .copywrite {
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: end;
+    font-size: 1.1vw;
+}
+
+.footer .copywrite a {
+    color: var(--bg-color);
+}
+
+.footer .copywrite a:hover {
+    color: var(--accent2);
+}
+
+.footer .form_container {
+    background-color: var(--accent2);
+    padding: 1.8vw 1.8vw;
+    border-radius: .6vw;
+    color: var(--accent);
+    width: 85%;
+}
+
+.footer .form_container h5 {
+    letter-spacing: 0px;
+    margin-top: 0px !important;
+}
+
+.footer .footer_container input {
+    border: none;
+    outline: none;
+    padding: .85vw 1.8vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.footer .footer_container p {
+    font-size: 1vw;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        height: 31rem;
+    }
+
+    .footer img {
+        width: 70px;
+        margin-bottom: 2rem !important;
+    }
+
+    .footer ul li a {
+        font-size: 1rem;
+    }
+
+    .footer h5 {
+        font-size: 2rem;
+    }
+
+    .footer .icon {
+        font-size: 1.15rem;
+        padding: 10px;
+    }
+
+    .footer .socialMedia li a span {
+        font-size: 1rem;
+    }
+
+    .footer .socialMedia .socialIcon {
+        font-size: 2.1rem;
+    }
+
+    .footer .copywrite {
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .footer .form_container {
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .footer .footer_container input {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .footer .footer_container p {
+        font-size: .9rem;
+    }
+
+    .footer .socialMedia a {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .footer .socialMedia a .socialIcon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .footer {
+        height: 100%;
+        position: static;
+    }
+    .footer_container{
+        position: static;
+    }
+}
+
+@media (max-width: 599px) {
+    .footer .form_container {
+        width: 100%;
+    }
+    .footer_container{
+        padding-top: 3rem !important;
+    }
+}
+
+
+.email_link{
+    color: #fff !important;
+}

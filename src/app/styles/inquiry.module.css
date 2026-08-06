@@ -1,0 +1,262 @@
+.inquiry {
+  margin: 30px 0;
+  position: relative;
+}
+
+.inquiry h1 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-family: medium;
+  margin-bottom: 20px;
+}
+
+.inquiry .content {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  padding: 3vw;
+  position: sticky;
+}
+
+.inquiry .link {
+  text-decoration: none;
+  color: var(--bg-color);
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.inquiry .link .icon {
+  color: var(--accent2);
+  font-size: 1.4em;
+}
+
+.inquiry .calculator h3 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.inquiry .calculator h4 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 0.6vw 0 2vw 0;
+}
+
+.inquiry .calculator h5 {
+  font-size: 1.5vw;
+  margin-bottom: 0px !important;
+}
+
+.inquiry .form_summary {
+  background-color: #eee;
+  color: var(--text-color);
+  padding: 1.5vw;
+  border: 2px solid var(--accent);
+  margin-bottom: 20px;
+}
+
+.inquiry .form_summary p {
+  font-size: 1.2vw;
+  margin-bottom: 0px !important;
+}
+
+.input_methods {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2em;
+  gap: 0.5em;
+}
+
+.input_methods h4 {
+  line-height: 100%;
+  margin: 0 !important;
+  margin-right: 0.7em !important;
+}
+
+.input_methods button {
+  color: var(--grey1);
+  font-size: 1em;
+  line-height: 100%;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.input_methods button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--accent);
+  transition: all 0.5s ease;
+}
+.input_methods button:hover {
+  color: var(--accent);
+}
+.input_methods button:hover::after {
+  width: 100%;
+}
+
+.input_methods button.active::after {
+  width: 100%;
+}
+
+.input_methods button.active {
+  color: var(--accent);
+}
+
+.inquiry h4 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: medium;
+  letter-spacing: 0.5px;
+}
+
+.tableContainer {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 0.5em;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  display: block; /* Prevents collapsing */
+  white-space: nowrap; /* Prevents wrapping of table content */
+}
+
+.tableContainer table {
+  width: max-content; /* Ensures the table expands beyond container if needed */
+  min-width: 100%; /* Prevents shrinking */
+  border-collapse: separate; /* Ensures it doesn't collapse */
+}
+
+.tableContainer th{
+    padding: 8px;
+    border-right: 1px solid #ddd;
+    text-align: left;  
+}
+
+.tableContainer td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tableContainer thead {
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+}
+
+.tableContainer thead tr:first-child th {
+  border-right: 1px solid #ddd;
+}
+
+.tableContainer tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row color */
+}
+
+.tableContainer tbody tr:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+
+
+.weightColumn {
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+
+.noBorder {
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tableWrapper {
+      overflow-x: auto;
+      width: 100%;
+    }
+  
+    .tableContainer {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+    }
+  
+    .tableContainer th,
+    .tableContainer td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tableContainer {
+      font-size: 12px;
+    }
+  
+    .tableContainer th,
+    .tableContainer td {
+      padding: 5px;
+    }
+  }
+  
+
+@media (max-width: 999px) {
+  .inquiry h1 {
+    font-size: 4rem;
+  }
+
+  .inquiry .content {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .inquiry .calculator h3 {
+    font-size: 2rem;
+  }
+  .inquiry .calculator h5 {
+    font-size: 1.5rem;
+  }
+  .inquiry .calculator h4 {
+    font-size: 1.5rem;
+    margin: 10px 0 22px 0;
+  }
+
+  .inquiry .link {
+    font-size: 1.2rem;
+  }
+
+  .inquiry .form_summary {
+    padding: 20px;
+  }
+
+  .inquiry .form_summary p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .inquiry .calculator h4 {
+    font-size: 1.3rem;
+  }
+  .inquiry .link {
+    font-size: 1rem;
+  }
+  .inquiry h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 499px) {  
+  .inquiry .link {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .inquiry .link {
+    font-size: .85rem;
+  }
+}

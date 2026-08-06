@@ -1,0 +1,611 @@
+.hero {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .content {
+    padding: 5vw;
+    overflow: hidden;
+    color: var(--bg-color);
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .content_img {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .asset {
+    position: absolute;
+    bottom: -32%;
+    left: -25%;
+    transform: rotate(180deg);
+    opacity: .5;
+    pointer-events: none;
+    width: 50%;
+    height: 50%;
+}
+
+.hero .content h1 {
+    font-family: medium;
+    font-size: 3.5vw;
+    letter-spacing: .5px;
+}
+
+.hero .content p {
+    font-size: 1.2vw;
+    font-weight: 300;
+    opacity: .8;
+}
+
+.boldTitle {
+    font-weight: bold !important;
+}
+
+.applictions {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1vw !important;
+    background-color: var(--accent);
+    padding: 2vw;
+    position: relative;
+    overflow: hidden;
+    padding-top: 13vw;
+}
+
+.applictions .text {
+    font-size: 30vw;
+    width: 90%;
+    /* background-color: red; */
+    border-radius: 0.6vw;
+    font-family: medium;
+    position: absolute;
+    left: 100%;
+    top: -5% !important;
+    animation-name: scrollLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* color: var(--bg-color); */
+    color: #447dc6;
+    z-index: 1;
+    opacity: 50%;
+    text-wrap: nowrap !important;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -150%;
+    }
+}
+
+.applictions .box {
+    width: 19% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    color: var(--text-color);
+    z-index: 999;
+    position: relative;
+    /* padding: 1vw; */
+}
+
+.applictions .box img {
+    width: 65%;
+}
+
+.applictions .boximage:hover {
+    background-color: var(--accent2) !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.applictions .boximage:hover p {
+    opacity: 100 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.applictions .box .boximage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 21vw;
+    padding: 2vw;
+    background-color: #f5f5f5;
+    padding-top: 2vw !important;
+    padding-bottom: 2vw !important;
+}
+
+.applictions .box .showdiv h4 {
+    margin-top: 15px;
+    font-size: 1.3vw;
+    letter-spacing: .5px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    /* font-size: 1.2vw !important; */
+}
+
+.applictions .box:hover .showdiv h4 {
+    color: var(--text-color);
+}
+
+.title {
+    background-color: var(--accent);
+    color: var(--accent2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin-bottom: 0px;
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.applictions .box:hover .links {
+    opacity: 1;
+}
+
+
+.applictions .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6vw;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.applictions .links .link {
+    font-size: .8vw;
+    padding: .5vw .4vw;
+    background-color: #bbb;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.applictions .links .link:hover {
+    background-color: var(--accent2);
+}
+
+
+@media (max-width: 1199px) {
+    .hero .content {
+        padding: 50px;
+    }
+
+    .hero .content h1 {
+        font-size: 3rem;
+    }
+
+    .hero .content p {
+        font-size: 1.1rem;
+    }
+
+    .applictions .links {
+        gap: 10px;
+    }
+
+    .applictions .links .link {
+        font-size: .7rem;
+        padding: 5px 8px;
+    }
+
+    .applictions .box .showdiv h4 {
+        font-size: 1.3rem;
+    }
+
+    .hero .content_img {
+        height: 100%;
+    }
+
+    .hero .content_img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .applictions .box {
+        margin-bottom: 1vw;
+    }
+
+    .applictions .box .boximage{
+        height: 19rem !important;
+    }
+
+    .applictions .text {
+        font-size: 18rem !important;
+        top: -3% !important;
+    }
+
+    .applictions {
+        padding-top: 8rem !important;
+    }
+
+    .title {
+        padding: 1rem !important;
+        font-size: 3rem !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero .asset {
+        position: absolute;
+        top: -32%;
+        left: -40%;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+
+    .applictions .box .boximage {
+        padding: 20px 40px !important;
+    }
+}
+
+/* content_container css herheh r */
+.content_container {
+    margin: 40px 0;
+}
+
+.content_container span {
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: var(--grey1);
+    text-transform: uppercase;
+}
+
+.content_container h4 {
+    font-size: 2vw;
+    line-height: 130% !important;
+    font-family: medium;
+    letter-spacing: .8px;
+}
+
+.content_container p {
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 8px !important;
+}
+
+@media (max-width: 1199px) {
+    .content_container span {
+        font-size: 1.4rem;
+    }
+
+    .content_container h4 {
+        font-size: 2.3rem;
+    }
+
+    .content_container p {
+        font-size: 1.1rem;
+    }
+
+    .applictions .box {
+        width: 25% !important;
+    }
+}
+
+@media (max-width: 999px) {
+    .content_container span {
+        font-size: 1.3rem;
+    }
+
+    .content_container h4 {
+        font-size: 1.8rem;
+    }
+
+    .applictions {
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+
+    .applictions .box {
+        width: 30% !important;
+    }
+
+    .applictions .box .boximage {
+        width: 100% !important;
+    }
+
+    @keyframes scrollLeft {
+        to {
+            left: -200%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .applictions .box {
+        width: 45% !important;
+    }
+
+    .applictions .box {
+        height: 20rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .applictions .text {
+        font-size: 16.7rem !important;
+        top: -1% !important;
+    }
+
+    .applictions {
+        padding-top: 8rem !important;
+    }
+
+    .title {
+        padding: 1rem !important;
+        font-size: 2.5rem;
+    }
+
+    @keyframes scrollLeft {
+        to {
+            left: -200%;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .content_container h4 {
+        font-size: 1.6rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .content {
+        padding: 30px 30px;
+    }
+
+    .applictions .box {
+        width: 90% !important;
+        height: 100% !important;
+    }
+
+    .applictions .box .boximage {
+        height: 100%;
+    }
+
+    .applictions {
+        padding-top: 9rem !important;
+    }
+
+    .title {
+        padding: 1rem !important;
+        font-size: 2rem;
+    }
+
+    @keyframes scrollLeft {
+        to {
+            left: -300%;
+        }
+    }
+}
+
+
+/* table csss herhere  */
+
+.table {
+    width: 100%;
+    padding: 10px 25px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    color: var(--accent);
+    font-family: medium;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 5px 0;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr td {
+    padding: 10px 0;
+    width: 50%;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr td p {
+    font-size: 1.2vw;
+    margin-bottom: 0px !important;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.right_align {
+    text-align: right !important;
+}
+@media (max-width: 1199px) {
+    .table th {
+        font-size: 1.5rem;
+    }
+
+    .table tr td p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .table th {
+        line-height: 100%;
+    }
+
+    .table tr td p {
+        font-size: .92rem;
+    }
+
+    .table {
+        padding: 10px 15px;
+    }
+
+    .table tr td {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    @keyframes scrollLeft {
+        to {
+            left: -450%;
+        }
+    }
+
+    .title {
+        padding: 2rem !important;
+        font-size: 2.5rem !important;
+    }
+}
+
+/* mild structure csss heerer re  */
+
+
+.mild{
+    overflow: hidden;
+    height: 25vw;
+    width: 100%;
+    display: block;
+}
+
+.mild .types {
+    height: 100%;
+    position: relative;
+}
+
+.mild .types img {
+    object-fit: cover !important;
+    height: 100%;
+    width: 100%;
+}
+
+.mild .types h4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 2vw;
+    color: var(--bg-color);
+    background-color: var(--accent);
+    padding: 1vw 1.8vw;
+    cursor: pointer;
+}
+
+.mild .types .content {
+    background-color: var(--accent);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--bg-color);
+    padding: 0;
+    width: 0;
+    height: 0;
+    transition: all .5s ease;
+    text-wrap: nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.mild .types .content span,
+.mild .types .content ul {
+    opacity: 0;
+    transition: all .5s ease .5s;
+}
+
+.mild .types:hover .content {
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+}
+
+.mild .types:hover .content span,
+.mild .types:hover .content ul {
+    opacity: 1;
+    transition: all .5s ease .5s;
+}
+
+.mild li {
+    font-size: 1.2vw;
+    margin: 5px 0;
+}
+
+.mild li p{
+    margin-bottom: 2px !important;
+}
+
+.subtitle {
+    font-family: medium;
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 999px) {
+    .mild{
+        height: 250px;
+    }
+    /* .mild .types {
+        height: 300px;
+    } */
+
+    .mild .types:hover .content {
+        padding: 2rem;
+    }
+
+    .mild li {
+        font-size: 1.1rem;
+    }
+
+    .mild .types h4 {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+    }
+
+    .subtitle {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .mild .types .content {
+        text-wrap: wrap;
+    }
+    .mild .types h4 {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "uses",
+  "info": {
+    "singularName": "use",
+    "pluralName": "uses",
+    "displayName": "Use"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "use": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

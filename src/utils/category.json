@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Sheets",
+    "services": ["Cut-To-Length"]
+  },
+  {
+    "category": "Packets",
+    "services": ["Packets"]
+  },
+  {
+    "category": "Coils",
+    "services": ["Coil – to – Coil "]
+  },
+  {
+    "category": "Slitted Coils",
+    "services": ["Slitting Process"]
+  },
+  {
+    "category": "Purlin",
+    "services": ["C Purlin", "Z Purlin"]
+  },
+  {
+    "category": "Roofing Sheets",
+    "services": ["Cut-To-Length", "Corrugated Sheets", "Profiled Sheets"]
+  }
+]

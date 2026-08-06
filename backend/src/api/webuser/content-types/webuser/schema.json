@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webusers",
+  "info": {
+    "singularName": "webuser",
+    "pluralName": "webusers",
+    "displayName": "Webuser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "Phone": {
+      "type": "string",
+      "required": false
+    },
+    "Country": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

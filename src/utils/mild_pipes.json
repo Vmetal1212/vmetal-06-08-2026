@@ -1,0 +1,49 @@
+{
+    "title": "Mild Steel Pipes",
+    "sub_products": [
+        {
+            "slug": "mild-steel-round-pipes",
+            "meta_title": "Top-Quality MS Round Pipes for Industrial Use – V Metal Solutions",
+            "meta_description": "Discover strong and durable mild steel round pipes at V Metal Solutions. Perfect for construction and industrial needs across Gujarat and nearby states.",
+            "title": "Mild Steel Round Pipes",
+            "image": "/images/mild-steel-round-pipe.jpg",
+            "image1": "/images/round.jpg",
+            "features": [
+                "High durability and strength for handling high pressure.",
+                "Smooth internal surface for efficient fluid flow.",
+                "Easily weldable and customizable for different uses.",
+                "Corrosion-resistant when galvanized or coated.",
+                "Versatile for both construction and mechanical applications."
+            ],
+            "applications": [
+                "Water and gas pipelines in residential and industrial sectors.",
+                "Scaffolding for construction projects.",
+                "Irrigation systems in agriculture.",
+                "Hydraulic systems in industrial machinery.",
+                "Automotive exhaust systems."
+            ]
+        },
+        {
+            "slug": "mild-steel-square-pipes",
+            "meta_title": "Mild Steel Square Pipes Supplier | V Metal Solutions Gujarat",
+            "meta_description": "Explore premium mild steel square pipes at V Metal Solutions. Ideal for construction and fabrication, serving Gujarat and nearby states with quality steel products.",
+            "title": "Mild Steel Square Pipes",
+            "image": "/images/mild-steel-hollow-section.jpg",
+            "image1": "/images/square.webp",
+            "features": [
+                "Uniform thickness for consistent performance.",
+                "High structural integrity and durability.",
+                "Excellent resistance to corrosion when treated.",
+                "Easy to weld, cut, and machine for precise applications.",
+                "Suitable for heavy-duty load-bearing structures."
+            ],
+            "applications": [
+                "Manufacturing of industrial and commercial furniture.",
+                "Construction of frames for gates and fencing.",
+                "Structural support in automotive chassis.",
+                "Frameworks for greenhouses and agricultural equipment.",
+                "Fabrication of modular structures and storage systems."
+            ]
+        }
+    ]
+}

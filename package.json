@@ -1,0 +1,38 @@
+{
+  "name": "vmetals",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "googleapis": "^144.0.0",
+    "gsap": "^3.12.5",
+    "hammerjs": "^2.0.8",
+    "india-pincode-search": "^1.0.2",
+    "lenis": "^1.1.10",
+    "multer": "^1.4.5-lts.1",
+    "next": "^16.1.6",
+    "nodemailer": "^6.9.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-dropdown": "^1.11.0",
+    "react-hook-form": "^7.53.1",
+    "react-icons": "^5.2.1",
+    "react-markdown": "^9.0.1",
+    "react-web-vector-icons": "^1.0.2",
+    "smooth-scrollbar": "^8.8.4",
+    "swiper": "^11.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}

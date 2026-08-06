@@ -1,0 +1,54 @@
+import axios from 'axios';
+import ProductDetail from './ProductDetail';
+import datas from '@/utils/data.json';
+import meta from '@/utils/meta.json'
+
+const slugToCategoryMap = {
+    "hr-hrpo": "Hot-Rolled (HR) Steel",
+    "gi": "Galvanized Iron (GI) / Galvanised Plates (GP)",
+    "cr-crca": "Cold-Rolled (CR) Steel",
+    "ppgi": "Pre-Painted Galvanised Iron (PPGI) / Pre-Painted Galvalume (PPGL)",
+    "pmp": "PMP Plates",
+    "ms-structure": "MS Structure",
+    "ms-pipes": "MS Pipes",
+};
+
+export const getData = async (slug) => {
+    const apiUrl = process.env.API_URL;
+    try {
+        const response = await axios.get(`${apiUrl}/api/products?populate=*`);
+        const datas = response.data.data;
+        const data = datas.find(item => item.attributes.slug == slug)
+        return data
+    } catch(e) {
+        console.log('Fetch error:', e.message);
+    }
+}
+
+export async function generateMetadata({ params }) {
+    const { name } = await params;
+    const data = await getData(name)
+    if (!data) return { title: 'Product Not Found' }
+    return {
+        title: data.attributes.meta_title,
+        description: data.attributes.meta_description,
+        keywords: data.attributes.keywords || "",
+        alternates: {
+            canonical: `/products/${name}/`,
+        }
+    };
+}
+
+const page = async ({ params }) => {
+    const { name } = await params;
+    const data = await getData(name)
+    if (!data) return <div>Product not found</div>
+    const selectedCategory = slugToCategoryMap[name] || "Hot-Rolled (HR) Steel";
+    return (
+        <>
+            <ProductDetail products={data} applications={datas[selectedCategory] || []} />
+        </>
+    )
+}
+
+export default page

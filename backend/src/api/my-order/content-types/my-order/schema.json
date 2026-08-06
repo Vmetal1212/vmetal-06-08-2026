@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_orders",
+  "info": {
+    "singularName": "my-order",
+    "pluralName": "my-orders",
+    "displayName": "MyOrder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": false
+    },
+    "category": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "length": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "string"
+    },
+    "GST": {
+      "type": "string",
+      "required": true
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string"
+    },
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "pincode": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

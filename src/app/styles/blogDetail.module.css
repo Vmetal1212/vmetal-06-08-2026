@@ -1,0 +1,131 @@
+.detail{
+  margin-top: 3vw;
+  font-size: 1.1vw;
+}
+
+.blogTitle {
+  width: 70%;
+  font-family: "medium";
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.blogMeta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blogMainImage {
+  width: 100% !important;
+  height: 50% !important;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.blogImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blogotherImages {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogSection {
+  padding-top: .8em;
+}
+
+.blogSectionTitle {
+  font-size: 1.8em;
+  margin-bottom: .4em;
+  color: #222;
+}
+
+.detail p {
+  font-size: 1.1em;
+  margin-bottom: .5em;
+  font-weight: 300;
+}
+
+.blogSidebar{
+  margin-top: 7.4em;
+}
+
+.blogSidebarSection{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 2em !important;
+}
+
+.blogSidebarSection h2{
+  font-size: 3em;
+  font-family: medium;
+  margin-bottom: 0 !important;
+}
+
+
+.blogContent h2{
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+.blogContent a{
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.blogContent h3{
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.blogContent h4{
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.blogContent h5{
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.blogContent h6{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .blogTitle {
+    width: 100%;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 599px) {
+  .blogTitle {
+    font-size: 2em;
+  }
+  .detail p{
+    font-size: .9em;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .detail{
+    font-size: 1rem;
+  }
+  .blogSidebar{
+    margin-top: .4em;
+  }
+}

@@ -1,0 +1,1279 @@
+{
+  "Hot-Rolled (HR) Steel": [
+    {
+      "img": "/images/construction1.svg",
+      "title": "Construction",
+      "para": "Used in beams and columns for structural frameworks in buildings and bridges.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/services/zc-purlin/",
+          "title": "C/Z Purlin"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Structures"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Chequered plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/shipbuilding1.svg",
+      "title": "Shipbuilding",
+      "para": "Ideal for creating significant, durable components like hulls and bulkheads.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Beams/Girders"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Products"
+        }
+      ]
+    },
+    {
+      "img": "/images/railway_tracks1.svg",
+      "title": "Railway Tracks",
+      "para": "Employed in producing railway tracks and other components requiring high durability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats/Beams/Girders"
+        }
+      ]
+    },
+    {
+      "img": "/images/havy_machinery1.svg",
+      "title": "Heavy Machinery",
+      "para": "Used for making parts and frames of heavy machinery due to its toughness.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Beams/Girders"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Products"
+        }
+      ]
+    },
+    {
+      "img": "/images/tubing1.svg",
+      "title": "Tubing and Pipes",
+      "para": "Commonly used in manufacturing pipes and tubing for plumbing and industrial applications.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HRPO"
+        }
+      ]
+    },
+    {
+      "img": "/images/agricultural_equipment1.svg",
+      "title": "Agricultural Equipment",
+      "para": "Used in making robust parts for tractors and other farming machinery.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        }
+      ]
+    },
+    {
+      "img": "/images/steel_furniture1.svg",
+      "title": "Steel Furniture",
+      "para": "Steel furniture frames are used in production due to their enhanced finish and durability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HRPO"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Electrical Equipments",
+      "para": "Employed in fabricating electrical enclosures and cabinets for better corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats"
+        }
+      ]
+    },
+    {
+      "img": "/images/appliances1.svg",
+      "title": "Appliances",
+      "para": "These are used in manufacturing the outer casing of household appliances due to their smooth finish.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        }
+      ]
+    },
+    {
+      "img": "/images/roofing_and_cladding1.svg",
+      "title": "Roofing and Cladding",
+      "para": "Widely used for roofing sheets and wall claddings due to its corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "Polycarbonate Sheets/Base Plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/signage_and_billboards1.svg",
+      "title": "Signage and Billboards",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO",
+          "para": "Used to create structural frames for large signs and billboards."
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA",
+          "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI",
+          "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL",
+          "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP",
+          "para": "Used in heavy-duty signage structures requiring robust support and durability."
+        }
+      ]
+    }
+  ],
+  "Cold-Rolled (CR) Steel": [
+    {
+      "img": "/images/appliances1.svg",
+      "title": "Appliances",
+      "para": "These are used in manufacturing the outer casing of household appliances due to their smooth finish.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Electrical Equipments",
+      "para": "Employed in fabricating electrical enclosures and cabinets for better corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats"
+        }
+      ]
+    },
+    {
+      "img": "/images/furniture1.svg",
+      "title": "Furniture",
+      "para": "Ideal for producing sleek and aesthetically pleasing steel furniture.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Panels",
+      "para": "Utilized to make car panels that require a superior finish.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR"
+        }
+      ]
+    },
+    {
+      "img": "/images/packaging1.svg",
+      "title": "Packaging",
+      "para": "Employed in the production of steel packaging materials for various goods.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR"
+        }
+      ]
+    },
+    {
+      "img": "/images/precision_engineering1.svg",
+      "title": "Precision Engineering",
+      "para": "Used to create components requiring precise dimensions and smooth surfaces.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR"
+        }
+      ]
+    },
+    {
+      "title": "Electrical Panels",
+      "para": "Ideal for manufacturing electrical panels that require enhanced corrosion resistance and formability.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CRCA"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Body Parts",
+      "para": "Used in fabricating car bodies and parts that need high strength and a good finish.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CRCA"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Cabinets and Lockers",
+      "para": "Utilized to make steel cabinets and lockers with smooth surfaces.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CRCA"
+        }
+      ]
+    },
+    {
+      "img": "/images/home_appliances1.svg",
+      "title": "Home Appliances",
+      "para": "Employed in producing parts for refrigerators, washing machines, and other appliances.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CRCA"
+        }
+      ]
+    },
+    {
+      "img": "/images/furniture1.svg",
+      "title": "Office Furniture",
+      "para": "Used for making durable and sleek office desks and storage units.",
+      "details": [
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CRCA"
+        }
+      ]
+    },
+    {
+      "img": "/images/roofing_and_cladding1.svg",
+      "title": "Roofing and Cladding",
+      "para": "Widely used for roofing sheets and wall claddings due to its corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "Polycarbonate Sheets/Base Plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/signage_and_billboards1.svg",
+      "title": "Signage and Billboards",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO",
+          "para": "Used to create structural frames for large signs and billboards."
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA",
+          "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI",
+          "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL",
+          "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP",
+          "para": "Used in heavy-duty signage structures requiring robust support and durability."
+        }
+      ]
+    }
+  ],
+  "Galvanized Iron (GI) / Galvanised Plates (GP)": [
+    {
+      "img": "/images/roofing_and_cladding1.svg",
+      "title": "Roofing and Cladding",
+      "para": "Widely used for roofing sheets and wall claddings due to its corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "Polycarbonate Sheets/Base Plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/fencing1.svg",
+      "title": "Fencing",
+      "para": "Ideal for making fences that require durability against weather elements."
+    },
+    {
+      "img": "/images/hvac_ductwork1.svg",
+      "title": "HVAC Ductwork",
+      "para": "Used in manufacturing HVAC ducts for better rust resistance.",
+      "details": [
+        {
+          "slug": "/products/gi/",
+          "title": "GI/GP"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Round Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Electrical Equipments",
+      "para": "Employed in fabricating electrical enclosures and cabinets for better corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats"
+        }
+      ]
+    },
+    {
+      "img": "/images/appliances1.svg",
+      "title": "Appliances",
+      "para": "These are used in manufacturing the outer casing of household appliances due to their smooth finish.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Body Parts",
+      "para": "Employed in fabricating parts that need protection against corrosion."
+    },
+    {
+      "img": "/images/utility_poles1.svg",
+      "title": "Utility Poles",
+      "para": "These are utilized to expose utility poles to environmental elements."
+    },
+    {
+      "img": "/images/billboard.svg",
+      "title": "Signage and Billboards",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO",
+          "para": "Used to create structural frames for large signs and billboards."
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA",
+          "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI",
+          "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL",
+          "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP",
+          "para": "Used in heavy-duty signage structures requiring robust support and durability."
+        }
+      ]
+    }
+  ],
+  "Pre-Painted Galvanised Iron (PPGI) / Pre-Painted Galvalume (PPGL)": [
+    {
+      "img": "/images/construction1.svg",
+      "title": "Construction",
+      "para": "Used in beams and columns for structural frameworks in buildings and bridges.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/services/zc-purlin/",
+          "title": "C/Z Purlin"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Structures"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Chequered plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/shipbuilding1.svg",
+      "title": "Shipbuilding",
+      "para": "Ideal for creating significant, durable components like hulls and bulkheads.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Beams/Girders"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Products"
+        }
+      ]
+    },
+    {
+      "img": "/images/hvac_ductwork1.svg",
+      "title": "HVAC Ductwork",
+      "para": "Used in manufacturing HVAC ducts for better rust resistance.",
+      "details": [
+        {
+          "slug": "/products/gi/",
+          "title": "GI/GP"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Round Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/roofing_and_cladding1.svg",
+      "title": "Roofing and Cladding",
+      "para": "Widely used for roofing sheets and wall claddings due to its corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "Polycarbonate Sheets/Base Plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Electrical Equipments",
+      "para": "Employed in fabricating electrical enclosures and cabinets for better corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats"
+        }
+      ]
+    },
+    {
+      "img": "/images/appliances1.svg",
+      "title": "Appliances",
+      "para": "These are used in manufacturing the outer casing of household appliances due to their smooth finish.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        }
+      ]
+    },
+    {
+      "img": "/images/architecture-buildings.svg",
+      "title": "Architectural Panels",
+      "para": "These are used to make aesthetically appealing exterior and interior panels."
+    },
+    {
+      "img": "/images/roofing_and_cladding1.svg",
+      "title": "Residential Roofing",
+      "para": "Ideal for creating colorful and durable roofing solutions."
+    },
+    {
+      "img": "/images/home_appliances1.svg",
+      "title": "Appliance Enclosures",
+      "para": "Employed in the production of attractive casings for various appliances."
+    },
+    {
+      "img": "/images/agricultural_equipment1.svg",
+      "title": "Agricultural Sheds",
+      "para": "Utilized to construct sheds and barns that need durability and a good appearance."
+    },
+    {
+      "img": "/images/signage_and_billboards1.svg",
+      "title": "Signage and Billboards",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO",
+          "para": "Used to create structural frames for large signs and billboards."
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA",
+          "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI",
+          "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL",
+          "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP",
+          "para": "Used in heavy-duty signage structures requiring robust support and durability."
+        }
+      ]
+    }
+  ],
+  "PMP Plates": [
+    {
+      "img": "/images/construction1.svg",
+      "title": "Construction",
+      "para": "Used in beams and columns for structural frameworks in buildings and bridges.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/services/zc-purlin/",
+          "title": "C/Z Purlin"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Structures"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Chequered plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/my_flooring1.svg",
+      "title": "Heavy-Duty Flooring",
+      "para": "Used in industrial and warehouse flooring that requires high load-bearing capacity."
+    },
+    {
+      "img": "/images/structural_component1.svg",
+      "title": "Structural Components",
+      "para": "Ideal for creating heavy-duty components in construction and machinery."
+    },
+    {
+      "img": "/images/shipbuilding1.svg",
+      "title": "Shipbuilding",
+      "para": "Utilized in making ship decks and other critical structural parts."
+    },
+    {
+      "img": "/images/bridge1.svg",
+      "title": "Bridge Construction",
+      "para": "Employed in the fabrication of bridge components requiring extra strength."
+    },
+    {
+      "img": "/images/industrial_eluipment1.svg",
+      "title": "Industrial Equipment",
+      "para": "Used in making robust equipment frames and supports."
+    },
+    {
+      "img": "/images/signage_and_billboards1.svg",
+      "title": "Signage and Billboards",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO",
+          "para": "Used to create structural frames for large signs and billboards."
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA",
+          "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI",
+          "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL",
+          "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP",
+          "para": "Used in heavy-duty signage structures requiring robust support and durability."
+        }
+      ]
+    }
+  ],
+  "MS Structure": [
+    {
+      "img": "/images/construction1.svg",
+      "title": "Construction",
+      "para": "Used in beams and columns for structural frameworks in buildings and bridges.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/services/zc-purlin/",
+          "title": "C/Z Purlin"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Structures"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Chequered plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/shipbuilding1.svg",
+      "title": "Shipbuilding",
+      "para": "Ideal for creating significant, durable components like hulls and bulkheads.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Beams/Girders"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Products"
+        }
+      ]
+    },
+    {
+      "img": "/images/my_flooring1.svg",
+      "title": "Flooring",
+      "para": "Ideal for non-slip flooring solutions in factories, buses, and walkways."
+    },
+    {
+      "img": "/images/stairs.svg",
+      "title": "Stair Treads",
+      "para": "Used in manufacturing stair treads to provide additional grip and safety."
+    },
+    {
+      "img": "/images/vehicle_ramp1.svg",
+      "title": "Vehicle Ramps",
+      "para": "Employed in constructing loading ramps for vehicles due to their anti-slip properties."
+    },
+    {
+      "img": "/images/oil-platform.svg",
+      "title": "Platforms",
+      "para": "Utilized for creating platforms in industrial settings where traction is crucial."
+    },
+    {
+      "img": "/images/apps.svg",
+      "title": "Decorative Applications",
+      "para": "Used in various decorative applications due to its unique pattern and finish."
+    },
+    {
+      "img": "/images/railway_tracks1.svg",
+      "title": "Railway Tracks",
+      "para": "Employed in producing railway tracks and other components requiring high durability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR Steel"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats/Beams/Girders"
+        }
+      ]
+    }
+  ],
+  "MS Pipes": [
+    {
+      "img": "/images/construction1.svg",
+      "title": "Construction",
+      "para": "Used in beams and columns for structural frameworks in buildings and bridges.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/pmp/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/services/zc-purlin/",
+          "title": "C/Z Purlin"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Structures"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Chequered plates"
+        }
+      ]
+    },
+    {
+      "img": "/images/hvac_ductwork1.svg",
+      "title": "HVAC Ductwork",
+      "para": "Used in manufacturing HVAC ducts for better rust resistance.",
+      "details": [
+        {
+          "slug": "/products/gi/",
+          "title": "GI/GP"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Round Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/automative_industry1.svg",
+      "title": "Automotive Industry",
+      "para": "Utilized in the manufacturing of chassis and frames due to its strength and malleability.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ppgi/",
+          "title": "PMP"
+        },
+        {
+          "slug": "/products/ms-pipes/",
+          "title": "Mild Steel Pipes"
+        }
+      ]
+    },
+    {
+      "img": "/images/Cabinets and Lockers.svg",
+      "title": "Electrical Equipments",
+      "para": "Employed in fabricating electrical enclosures and cabinets for better corrosion resistance.",
+      "details": [
+        {
+          "slug": "/products/hr-hrpo/",
+          "title": "HR/HRPO"
+        },
+        {
+          "slug": "/products/cr-crca/",
+          "title": "CR/CRCA"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "GP/GI"
+        },
+        {
+          "slug": "/products/gi/",
+          "title": "PPGI/PPGL"
+        },
+        {
+          "slug": "/products/ms-structure/",
+          "title": "Mild Steel Flats"
+        }
+      ]
+    },
+    {
+      "img": "/images/my_flooring1.svg",
+      "title": "Flooring",
+      "para": "Ideal for non-slip flooring solutions in factories, buses, and walkways."
+    },
+    {
+      "img": "/images/stairs.svg",
+      "title": "Stair Treads",
+      "para": "Used in manufacturing stair treads to provide additional grip and safety."
+    },
+    {
+      "img": "/images/vehicle_ramp1.svg",
+      "title": "Vehicle Ramps",
+      "para": "Employed in constructing loading ramps for vehicles due to their anti-slip properties."
+    },
+    {
+      "img": "/images/oil-platform.svg",
+      "title": "Platforms",
+      "para": "Utilized for creating platforms in industrial settings where traction is crucial."
+    },
+    {
+      "img": "/images/apps.svg",
+      "title": "Decorative Applications",
+      "para": "Used in various decorative applications due to its unique pattern and finish."
+    }
+  ]
+}

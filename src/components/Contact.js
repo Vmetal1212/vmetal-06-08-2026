@@ -1,0 +1,179 @@
+'use client'
+import React, { useEffect, useState } from 'react'
+import styles from '@/app/styles/contact.module.css'
+import Image from 'next/image'
+import { HiOutlinePhone } from "react-icons/hi";
+import Link from 'next/link';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { BiSolidDownload } from "react-icons/bi";
+import { useRouter } from 'next/navigation';
+import axios from 'axios';
+
+
+const Contact = () => {
+
+    const [focus, setFocus] = useState(Array(5).fill(false));
+    const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: "" });
+    const [success, setSuccess] = useState({ success: null, text: '' });
+    const [loading, setLoading] = useState(false);
+    
+
+    const router = useRouter();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            setLoading(true)
+            const response = await axios.post("/api/sendContact", {
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                subject: formData.subject,
+                message: formData.message,
+            }, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            const json = response.data;
+            console.log(json);
+            
+            if (json.success) {
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    subject: '',
+                    message: '',
+                })
+                router.push('/thank-you/')
+                setSuccess({ success: true, text: json.message })
+            } else {
+                setSuccess({ success: false, text: json.message })
+            }
+        } catch (error) {
+            setSuccess({ success: false, text: error.response.data.message })
+        } finally{
+            setLoading(false)
+        }
+    }
+
+    const handleFocus = (index, e) => {
+        const value = e.target.value;
+        const array = [...focus]
+        array[index] = value !== '' ? true : false;
+        setFocus(array)
+    }
+
+    const handleChange = (e) => {
+        setSuccess({ success: null, text: '' })
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value })
+    }
+
+    useEffect(() => {
+
+        gsap.registerPlugin(ScrollTrigger);
+        // Function to create ScrollTrigger for a given row selector with delay
+        function createScrollTrigger(rowSelector, item, sensitivity, duration) {
+            var translateSetter = gsap.quickSetter(rowSelector + item, "y", "px");
+            var proxy = { y: 0 };
+
+            ScrollTrigger.create({
+                trigger: rowSelector,
+                start: "top 10%",
+                end: "bottom 50%+=100px",
+                onUpdate: self => {
+                    var translateY = self.getVelocity() / sensitivity; // Adjust the sensitivity
+                    if (Math.abs(translateY) > Math.abs(proxy.y)) {
+                        proxy.y = translateY;
+                        gsap.to(proxy, {
+                            y: 0,
+                            duration: duration, // Adjust the duration
+                            ease: "power3",
+                            overwrite: true,
+                            onUpdate: () => translateSetter(proxy.y)
+                        });
+                    }
+                }
+            });
+
+            gsap.set(rowSelector + item, {
+                transformOrigin: "center center",
+                force3d: true
+            });
+        }
+
+        // Apply to both rows with different parameters
+        // createScrollTrigger(".scroll-section .images-1", -100, 1); // Row 1: sensitivity -10, duration 1s
+        // createScrollTrigger(`.${styles.component}`, ` .${styles.image}`, -150, 1.5);
+        // createScrollTrigger(`.${styles.component}`, ` .${styles.form_container}`, 150, 1.5);
+    })
+
+    return (
+        <>
+            <div className={styles.component}>
+                <div className="container-fluid padd-x mb-2">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 col-12">
+                            <div className={styles.image}>
+                                <h2>Get a Quote</h2>
+                                <div className="d-flex align-items-center justify-content-center w-100 p-4">
+                                    <Image width={1000} height={1000} src="/images/Conctact us.webp" className='img-fluid' alt='' />
+                                </div>
+                                <div className="d-flex align-items-start">
+                                    <HiOutlinePhone className={styles.icon} />
+                                    <div className='d-flex flex-column align-items-start'>
+                                        <h5>Contact us</h5>
+                                        <Link href={"tel:+919510215623"}>+91 95102 15623</Link>
+                                        <Link href={"mailto:info@vmetalsolutions.com"}>info@vmetalsolutions.com</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-12">
+                            <form onSubmit={handleSubmit} className={styles.form_container}>
+                                <h3>Get in touch here.</h3>
+                                <div className="input-field">
+                                    <input type="text" className='name' onChange={(e) => { handleFocus(0, e); handleChange(e) }} name='name' required />
+                                    <label htmlFor="name" className={focus[0] ? 'on-focus' : null}>Name</label>
+                                </div>
+                                <div className="input-field">
+                                    <input type="text" className='email' onChange={(e) => { handleFocus(1, e); handleChange(e) }} name='email' required />
+                                    <label htmlFor="email" className={focus[1] ? 'on-focus' : null}>Email</label>
+                                </div>
+                                <div className="input-field">
+                                    <input type="text" className='phone' maxLength={10} onChange={(e) => { handleFocus(2, e); handleChange(e) }} name='phone' />
+                                    <label htmlFor="phone" className={focus[2] ? 'on-focus' : null}>Phone Number</label>
+                                </div>
+                                <div className="input-field">
+                                    <input type="text" className='subject' onChange={(e) => { handleFocus(3, e); handleChange(e) }} name='subject' required />
+                                    <label htmlFor="subject" className={focus[3] ? 'on-focus' : null}>Subject</label>
+                                </div>
+                                <div className="input-field">
+                                    <textarea rows={4} name='message' id='message' onChange={(e) => { handleFocus(4, e); handleChange(e) }} required />
+                                    <label htmlFor="message" className={focus[4] ? 'on-focus' : null}>Message</label>
+                                </div>
+                                <div className="d-flex align-items-start">
+                                    <label className="checkBox">
+                                        <input id="ch1" type="checkbox" />
+                                        <div className="transition"></div>
+                                    </label>
+                                    <p>By submitting this form, you confirm that you have read and agree to V Metal Solutions <Link href={"/privacy/"}>Privacy Statement</Link>.</p>
+                                </div>
+                                {success.text !== '' ? <p className='mb-1 mt-0' style={success.success ? { color: "green" } : { color: "red" }}>{success.text}</p> : null}
+                                <div className="mt-3">
+                                    <button type='submit' disabled={loading} className='button'>{loading ? "Submitting" : "Send Message"}</button>
+                                    <a target='_blank' href={"/images/Vmetal_brocher.pdf"} className='button2 ms-2 mb-0 rounded-0' style={{ color: "#fff" }}><BiSolidDownload className='me-2' /> E Brochure</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Contact

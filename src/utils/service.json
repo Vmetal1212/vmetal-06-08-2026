@@ -1,0 +1,428 @@
+[
+    {
+        "slug": "M. S. Slitted Coils",
+        "title": "M. S. Slitted Coils: HR/HRPO, CR/CRCA, GP/GI",
+        "applications": [
+            {
+                "img": "/images/automative_industry1.svg",
+                "title": "Automotive Industry",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Used in manufacturing chassis, structural components, and brackets due to their strength and durability."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Employed in producing body panels and interior components that require high precision and surface finish."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Ideal for manufacturing corrosion-resistant components like exhaust systems and underbody parts."
+                    }
+                ]
+            },
+            {
+                "img": "/images/Cabinets and Lockers.svg",
+                "title": "Electrical Equipment Manufacturing",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Utilized for producing large transformer cores and electrical panels that demand high structural integrity."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Used in creating enclosures for electrical systems that require acceptable tolerances and smooth surfaces."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Preferred for making outdoor electrical equipment that needs to withstand harsh weather conditions."
+                    }
+                ]
+            },
+            {
+                "img": "/images/construction1.svg",
+                "title": "Construction Industry",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Suitable for fabricating beams, columns, and structural frameworks in buildings and bridges."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Used in creating precision components like window frames and door panels."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Ideal for roofing, siding, and other exposed structural elements that require corrosion resistance."
+                    }
+                ]
+            },
+            {
+                "img": "/images/appliances1.svg",
+                "title": "Appliance Manufacturing",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Employed in making structural components for heavy appliances, such as washing machine frames."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Used for external panels of home appliances, including refrigerators and ovens, where aesthetics and finish are crucial."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Commonly used for outdoor appliances that need protection from the elements, such as air conditioning units."
+                    }
+                ]
+            },
+            {
+                "img": "/images/agricultural_equipment1.svg",
+                "title": "Agricultural Equipment",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Used to fabricate durable, high-strength parts for tractors and other farm machinery."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Employed in producing parts that require precision and smooth finishes, such as tools and blades."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Preferred for equipment that must resist corrosion, like grain silos and irrigation systems."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "M. S. Cut-to-length Sheets",
+        "title": "M. S. Cut-to-length Sheets: HR/HRPO, CR/CRCA, GP/GI, PPGI/PPGL, PMP",
+        "applications": [
+            {
+                "img": "/images/roofing_and_cladding1.svg",
+                "title": "Roofing and Cladding",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Used in producing sturdy roofing sheets and cladding panels for industrial buildings."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Ideal for creating smooth, aesthetically pleasing cladding for residential and commercial buildings."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Employed for roofing sheets that require rust resistance and longevity."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Used in decorative roofing and cladding where color and design flexibility are essential."
+                    },
+                    {
+                        "slug": "/products/pmp/",
+                        "title": "PMP",
+                        "para": "Preferred for heavy-duty industrial roofs and walls requiring high strength and durability."
+                    }
+                ]
+            },
+            {
+                "img": "/images/automative_industry1.svg",
+                "title": "Automotive Panels",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Utilized in manufacturing structural panels for vehicles that need to endure high stress."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Used for body panels that require precise dimensions and superior surface quality."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Employed in making corrosion-resistant parts like doors and underbody shields."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Ideal for creating colored exterior parts for vehicles, adding both protection and aesthetic appeal."
+                    },
+                    {
+                        "slug": "/products/pmp/",
+                        "title": "PMP",
+                        "para": "Used in making heavy-duty components, such as truck beds and trailers."
+                    }
+                ]
+            },
+            {
+                "img": "/images/signage_and_billboards1.svg",
+                "title": "Signage and Billboards",
+                "details": [
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR/HRPO",
+                        "para": "Used to create structural frames for large signs and billboards."
+                    },
+                    {
+                        "slug": "/products/cr-crca/",
+                        "title": "CR/CRCA",
+                        "para": "Employed for the external surface of signs, offering a smooth finish that’s easy to print on."
+                    },
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GP/GI",
+                        "para": "Ideal for outdoor signs that need to resist rust and environmental wear."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Preferred for colorful, long-lasting signage in both urban and rural settings."
+                    },
+                    {
+                        "slug": "/products/pmp/",
+                        "title": "PMP",
+                        "para": "Used in heavy-duty signage structures requiring robust support and durability."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "Corrugation and Profiling",
+        "title": "Corrugation and Profiling: GI/GP, PPGI/PPGL, Polycarbonate Sheets, Polycarbonate Base Plates",
+        "applications": [
+            {
+                "img": "/images/roofing_and_cladding1.svg",
+                "title": "Roofing Solutions",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI/GP",
+                        "para": "Used to create durable, weather-resistant roofing sheets for industrial and residential buildings."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Ideal for colorful, aesthetically pleasing roofing options in commercial and residential sectors."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Sheets",
+                        "para": "Employed for translucent roofing applications, allowing natural light while providing UV protection."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Base Plates",
+                        "para": "Used to support and secure roofing structures, ensuring stability and durability."
+                    }
+                ]
+            },
+            {
+                "img": "/images/wall1.svg",
+                "title": "Wall Cladding",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI/GP",
+                        "para": "Applied in creating strong, protective wall cladding for industrial and commercial buildings."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Preferred for decorative wall panels that combine durability with vibrant color options."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Sheets",
+                        "para": "Used for transparent or semi-transparent wall cladding, providing natural light and insulation."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Base Plates",
+                        "para": "Employed to secure polycarbonate cladding panels, ensuring a firm attachment to the structure."
+                    }
+                ]
+            },
+            {
+                "img": "/images/home_appliances1.svg",
+                "title": "Greenhouses",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI/GP",
+                        "para": "Utilized for the structural framework of greenhouses, providing corrosion resistance and strength."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Employed in creating colorful, protective coverings for greenhouses."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Sheets",
+                        "para": "Ideal for greenhouse coverings that offer light transmission and thermal insulation."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Base Plates",
+                        "para": "Used to mount polycarbonate sheets securely, ensuring stability and long-term performance."
+                    }
+                ]
+            },
+            {
+                "img": "/images/machinery.svg",
+                "title": "Industrial Sheds",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI/GP",
+                        "para": "Used in constructing the roofing and walls of industrial sheds, offering durability and weather resistance."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Employed in creating visually appealing, protective roofing and cladding for industrial structures."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Sheets",
+                        "para": "Preferred for skylights and other light-transmitting sections of industrial sheds."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Base Plates",
+                        "para": "Utilized to anchor polycarbonate sheets securely to the structure, preventing leaks and ensuring stability."
+                    }
+                ]
+            },
+            {
+                "img": "/images/Customized_Profiles1.svg",
+                "title": "Customized Profiles",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI/GP",
+                        "para": "Used for creating custom corrugated profiles for various architectural projects."
+                    },
+                    {
+                        "slug": "/products/ppgi/",
+                        "title": "PPGI/PPGL",
+                        "para": "Employed to manufacture custom-colored profiles for decorative and structural purposes."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Sheets",
+                        "para": "Applied in creating unique shapes and profiles for specialized construction needs."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Polycarbonate Base Plates",
+                        "para": "Used to secure custom polycarbonate profiles, ensuring they are properly anchored and stable."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "C/Z Purlin: GI and HR",
+        "title": "C/Z Purlin: GI and HR",
+        "applications": [
+            {
+                "img": "/images/roofing_and_cladding1.svg",
+                "title": "Roofing Structures",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI",
+                        "para": "Used in supporting roofing systems for industrial, commercial, and residential buildings, providing corrosion resistance and strength."
+                    },
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR",
+                        "para": "Employed in heavy-duty roofing structures where high strength and load-bearing capacity are essential."
+                    },
+                    {
+                        "slug": "",
+                        "title": "Wall Girts",
+                        "para": "Ideal for constructing wall girts in steel-framed buildings, offering stability and resistance to environmental factors."
+                    },
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR",
+                        "para": "Used in high-load-bearing wall girts that require additional strength and durability."
+                    }
+                ]
+            },
+            {
+                "img": "/images/Bracing_Systems1.svg",
+                "title": "Bracing Systems",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI",
+                        "para": "Employed in creating bracing systems for structural stability in steel buildings, offering protection against rust."
+                    },
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR",
+                        "para": "Used for bracing in heavy industrial applications, providing superior strength and rigidity."
+                    }
+                ]
+            },
+            {
+                "img": "/images/canopies.png",
+                "title": "Canopies and Awnings",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI",
+                        "para": "Used in the framework of canopies and awnings, offering a blend of strength and corrosion resistance."
+                    },
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR",
+                        "para": "Employed in supporting large, heavy canopies where structural integrity is paramount."
+                    }
+                ]
+            },
+            {
+                "img": "/images/Solar_Panel_Mounts1.svg",
+                "title": "Solar Panel Mounts",
+                "details": [
+                    {
+                        "slug": "/products/gi/",
+                        "title": "GI",
+                        "para": "Ideal for creating corrosion-resistant mounting structures for solar panels, ensuring longevity and performance."
+                    },
+                    {
+                        "slug": "/products/hr-hrpo/",
+                        "title": "HR",
+                        "para": "Used in heavy-duty solar panel mounts that require high strength to support large installations."
+                    }
+                ]
+            }
+        ]
+    }
+]

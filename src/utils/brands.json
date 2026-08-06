@@ -1,0 +1,184 @@
+[   
+    {
+        "product": "All",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/posco.webp",
+            "/images/jsp.png",
+            "/images/tata.png"
+        ]
+    },
+    {
+        "product": "Hot-Rolled/Hot-Rolled Pickled & Oiled (HR/HRPO)",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/jsp.png",
+            "/images/tata.png",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Galvanised Iron",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/jsp.png",
+            "/images/tata.png",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Cold Rolled/Cold Rolled Closed Annealed",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/posco.webp",
+            "/images/jsp.png",
+            "/images/tata.png"
+        ]
+    },
+    {
+        "product": "Pre-Painted Galvanised Iron/Galvalume",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/jsp.png",
+            "/images/tata.png",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "PMP Plates",
+        "brands": [
+            "/images/jsw_steel.webp",
+            "/images/amns.webp",
+            "/images/jsp.png",
+            "/images/tata.png",
+            "New Budding Indian brands"
+        ]
+    },
+    {
+        "product": "Mild Steel Structure",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Pipes",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Channels",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Angles",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Sections",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Flats",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Beams/Girders",
+        "brands": [
+            "Rolling Brands (All Structural Products)",
+            "Brands (All Structural Products)",
+            "Available On Demand",
+            "/images/jsp.png",
+            "/images/jsw_steel.webp",
+            "/images/sail.webp",
+            "/images/vizag.webp",
+            "/images/tata.png",
+            "/images/amns.webp"
+        ]
+    },
+    {
+        "product": "Mild Steel Round Pipes",
+        "brands": [
+            "Brands (All Pipe Products)",
+            "ASIAN | APOLLO | TATA | JSW | GOODLUCK",
+            "/images/apollo.png",
+            "/images/asian.png",
+            "/images/goodluck.png",
+            "/images/jsw_steel.webp",
+            "/images/tata.png"
+        ]
+    },
+    {
+        "product": "Mild Steel Square Pipes",
+        "brands": [
+            "Brands (All Pipe Products)",
+            "ASIAN | APOLLO | TATA | JSW | GOODLUCK",
+            "/images/apollo.png",
+            "/images/asian.png",
+            "/images/goodluck.png",
+            "/images/jsw_steel.webp",
+            "/images/tata.png"
+        ]
+    }
+]
