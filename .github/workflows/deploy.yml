@@ -1,9 +1,12 @@
 name: Deploy Vmetals
 
+# Manual-trigger only: this repo isn't wired up to the AWS/EC2 deploy
+# target (no AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY/AWS_REGION/
+# EC2_INSTANCE_ID/EC2_PUBLIC_IP secrets configured here on purpose).
+# Kept as reference for the deploy shape used in the original repo.
+# Switch back to `push: branches: [main]` once real secrets are added.
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: {}
 
 concurrency:
   group: vmetals-deploy
