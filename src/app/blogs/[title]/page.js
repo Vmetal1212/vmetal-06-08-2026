@@ -2,7 +2,18 @@ import React from 'react'
 import BlogDetail from './blog-detail'
 import axios from 'axios';
 
-export const dynamic = 'force-dynamic'
+export async function generateStaticParams() {
+  const apiUrl = process.env.API_URL;
+  if (!apiUrl) return [];
+  try {
+    const response = await axios.get(`${apiUrl}/api/blogs?populate=*`);
+    const blogs = response.data.data || [];
+    return blogs.map(item => ({ title: item.attributes?.slug })).filter(p => p.title);
+  } catch (error) {
+    console.log('Error fetching blog static params:', error.message);
+    return [];
+  }
+}
 
 export const fetchBlog = async (slug) => {
   const apiUrl = process.env.API_URL;
