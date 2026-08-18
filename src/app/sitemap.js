@@ -3,7 +3,7 @@ import mildSteel from "@/utils/mild_steel.json";
 import mildPipes from "@/utils/mild_pipes.json";
 import { buildSiteUrl, toCanonicalPath } from "@/utils/seo";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 const staticRoutes = [
   "",
