@@ -13,6 +13,33 @@ const slugToCategoryMap = {
     "ms-pipes": "MS Pipes",
 };
 
+export async function generateStaticParams() {
+    const defaultSlugs = [
+        "hr-hrpo",
+        "gi",
+        "cr-crca",
+        "crca",
+        "ppgi",
+        "pmp",
+        "ms-structure",
+        "ms-pipes",
+        "zc-purlin"
+    ];
+    let slugs = [...defaultSlugs];
+    if (process.env.API_URL) {
+        try {
+            const response = await axios.get(`${process.env.API_URL}/api/products?populate=*`);
+            const remoteSlugs = (response.data.data || []).map(item => item.attributes?.slug).filter(Boolean);
+            if (remoteSlugs.length > 0) {
+                slugs = Array.from(new Set([...slugs, ...remoteSlugs]));
+            }
+        } catch (e) {
+            console.log('Skipping remote products fetch for static params:', e.message);
+        }
+    }
+    return slugs.map(name => ({ name }));
+}
+
 export const getData = async (slug) => {
     const apiUrl = process.env.API_URL;
     try {
