@@ -7,19 +7,20 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import ProductCard from '@/components/ProductCard'
 import axios from 'axios'
 
+import { FALLBACK_PRODUCTS } from '@/utils/fallbackData'
+
 const Products = () => {
 
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState(FALLBACK_PRODUCTS);
 
     const getProducts = async () => {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-        if (!apiUrl) return;
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://www.vmetalsolutions.com/api';
         try {
             const response = await axios.get(`${apiUrl}/products?populate=*`, {
                 method: "GET",
             });
             const data = response.data?.data;
-            if (data) setProducts(data);
+            if (data && data.length > 0) setProducts(data);
         } catch (e) {
             console.log('Error fetching products:', e.message);
         }
