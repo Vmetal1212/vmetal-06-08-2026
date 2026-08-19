@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Services from './Services'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const metadata = {
   title: 'V Metal: Comprehensive Steel Service Provider – CTL, Slitting, and More',
