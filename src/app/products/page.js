@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Products from './Products'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 
 export const metadata = {
