@@ -8,9 +8,18 @@ import Markdown from "react-markdown";
 import { getStrapiMedia } from "@/utils/getStrapiMedia";
 
 
-const BlogsPage = ({ data }) => {
+const BlogsPage = ({ data = [] }) => {
+  const safeData = Array.isArray(data) ? data : [];
+  if (safeData.length === 0) {
+    return (
+      <div className={`container-fluid padd-x mt-5 ${styles.blogs}`}>
+        <h1 className={`${styles.blogText} mt-5`}>The Blogs</h1>
+        <p className="mt-4">No blogs available at the moment.</p>
+      </div>
+    );
+  }
 
-  const sortedData = [...data].sort((a, b) => new Date(b.attributes.publishedAt) - new Date(a.attributes.publishedAt));
+  const sortedData = [...safeData].sort((a, b) => new Date(b.attributes?.publishedAt) - new Date(a.attributes?.publishedAt));
   const [recentBlog, ...otherBlogs] = sortedData;
 
   const truncateDescription = (text, maxLength = 130) => {
