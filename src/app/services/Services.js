@@ -9,20 +9,20 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import axios from 'axios'
 import productPage from '@/app/styles/product.module.css'
 
+import { FALLBACK_SERVICES } from '@/utils/fallbackData'
+
 const Services = () => {
 
-
-  const [services, setServices] = useState([]);
+  const [services, setServices] = useState(FALLBACK_SERVICES);
 
   const getServices = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    if (!apiUrl) return;
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://www.vmetalsolutions.com/api';
     try {
       const response = await axios.get(`${apiUrl}/services?populate=*`, {
         method: "GET",
       });
       const data = response.data?.data;
-      if (data) setServices(data);
+      if (data && data.length > 0) setServices(data);
     } catch (e) {
       console.log('Error fetching services:', e.message);
     }
