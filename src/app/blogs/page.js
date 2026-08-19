@@ -1,17 +1,19 @@
 import React from 'react';
 import BlogsPage from './blogs';
 import axios from 'axios';
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const fetchBlog = async () => {
   const apiUrl = process.env.API_URL;
+  if (!apiUrl) return [];
 
   try {
     const response = await axios.get(`${apiUrl}/api/blogs?populate=*`);
-    const data = response.data.data;
-    return data;
+    const data = response.data?.data;
+    return data || [];
   } catch (error) {
     console.log('Error fetching blogs:', error.message);
+    return [];
   }
 };
 
