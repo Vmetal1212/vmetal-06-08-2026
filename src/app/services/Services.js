@@ -15,11 +15,17 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   const getServices = async () => {
-    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`, {
-      method: "GET",
-    });
-    const data = response.data.data;
-    setServices(data)
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    if (!apiUrl) return;
+    try {
+      const response = await axios.get(`${apiUrl}/services?populate=*`, {
+        method: "GET",
+      });
+      const data = response.data?.data;
+      if (data) setServices(data);
+    } catch (e) {
+      console.log('Error fetching services:', e.message);
+    }
   }
 
   useEffect(() => {
