@@ -87,12 +87,18 @@ const ServiceDetails = ({ data, applications }) => {
                     <div className="row my-3 mt-5 h-100">
                         <div className="col-lg-4 col-12">
                             <div className="d-flex align-items-center justify-content-center flex-column h-100" style={{ gap: "20px" }}>
-                                {data.attributes ? data.attributes.coverImage.data.map((item, index) => {
-                                    const imageUrl = item?.attributes?.url
-                                        ? getStrapiMedia(item.attributes.url)
-                                        : "/fallback.png";
-                                    return <Image key={index} width={1000} height={1000} src={imageUrl} className='w-100 h-100' alt='' />
-                                }) : null}
+                                {data.attributes?.coverImage?.data ? (
+                                    Array.isArray(data.attributes.coverImage.data) ? (
+                                        data.attributes.coverImage.data.map((item, index) => {
+                                            const imageUrl = item?.attributes?.url ? getStrapiMedia(item.attributes.url) : "/fallback.png";
+                                            return <Image key={index} width={1000} height={1000} src={imageUrl} className='w-100 h-100' alt='' />
+                                        })
+                                    ) : (
+                                        <Image width={1000} height={1000} src={data.attributes.coverImage.data.attributes?.url ? getStrapiMedia(data.attributes.coverImage.data.attributes.url) : "/fallback.png"} className='w-100 h-100' alt='' />
+                                    )
+                                ) : (
+                                    <Image width={1000} height={1000} src="/images/services.jpg" className='w-100 h-100' alt='' />
+                                )}
                             </div>
                         </div>
                         <div className="col-lg-8 col-12 mt-lg-0 mt-3">
