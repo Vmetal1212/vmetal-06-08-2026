@@ -12,21 +12,24 @@ import Image from 'next/image'
 import axios from 'axios'
 import { getStrapiMedia } from "@/utils/getStrapiMedia";
 
+import { FALLBACK_PRODUCTS } from '@/utils/fallbackData';
+
 const ProductSlide = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState(FALLBACK_PRODUCTS)
     const swiperRef = useRef(null)
     const navigationPrevRef = useRef(null)
     const navigationNextRef = useRef(null)
 
     const getProducts = async () => {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://www.vmetalsolutions.com/api';
         try {
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products?populate=*`, {
+            const response = await axios.get(`${apiUrl}/products?populate=*`, {
                 method: "GET",
             })
-            const data = response.data.data
-            setProducts(data)
+            const data = response.data?.data
+            if (data && data.length > 0) setProducts(data)
         } catch (error) {
-            console.log(error)
+            console.log('Error fetching products slider:', error.message)
         }
     }
 
