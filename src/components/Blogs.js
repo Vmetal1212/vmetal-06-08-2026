@@ -48,12 +48,13 @@ const Blogs = () => {
     };
 
     const fetchBlog = async () => {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+        const rawApiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://www.vmetalsolutions.com/api';
+        const apiUrl = rawApiUrl.endsWith('/api') ? rawApiUrl : `${rawApiUrl}/api`;
 
         try {
-            const response = await axios.get(`${apiUrl}/api/blogs?populate=*`);
-            const data = response.data.data.sort((a, b) => new Date(b.attributes.publishedAt) - new Date(a.attributes.publishedAt));
-            setBlogData(data.slice(0, 3))
+            const response = await axios.get(`${apiUrl}/blogs?populate=*`);
+            const data = (response.data?.data || []).sort((a, b) => new Date(b.attributes?.publishedAt) - new Date(a.attributes?.publishedAt));
+            setBlogData(data.slice(0, 3));
         } catch (error) {
             console.log('Error fetching blogs:', error.message);
         }
