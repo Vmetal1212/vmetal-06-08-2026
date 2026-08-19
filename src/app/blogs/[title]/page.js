@@ -4,15 +4,20 @@ import axios from 'axios';
 
 export async function generateStaticParams() {
   const apiUrl = process.env.API_URL;
-  if (!apiUrl) return [];
-  try {
-    const response = await axios.get(`${apiUrl}/api/blogs?populate=*`);
-    const blogs = response.data.data || [];
-    return blogs.map(item => ({ title: item.attributes?.slug })).filter(p => p.title);
-  } catch (error) {
-    console.log('Error fetching blog static params:', error.message);
-    return [];
+  let slugs = [{ title: 'default' }];
+  if (apiUrl) {
+    try {
+      const response = await axios.get(`${apiUrl}/api/blogs?populate=*`);
+      const blogs = response.data.data || [];
+      const remoteSlugs = blogs.map(item => ({ title: item.attributes?.slug })).filter(p => p.title);
+      if (remoteSlugs.length > 0) {
+        slugs = remoteSlugs;
+      }
+    } catch (error) {
+      console.log('Error fetching blog static params:', error.message);
+    }
   }
+  return slugs;
 }
 
 export const fetchBlog = async (slug) => {
