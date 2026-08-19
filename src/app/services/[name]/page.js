@@ -25,14 +25,38 @@ export async function generateStaticParams() {
 }
 
 export const getData = async (slug) => {
+    const apiUrl = process.env.API_URL || 'https://www.vmetalsolutions.com';
     try {
-        const response = await axios.get(`${process.env.API_URL}/api/services?populate=*`);
-        const datas = response.data.data;
-        const data = datas.find(item => item.attributes.slug == slug)
-        return data
+        const response = await axios.get(`${apiUrl}/api/services?populate=*`);
+        const datas = response.data?.data;
+        const data = datas?.find(item => item.attributes?.slug == slug);
+        if (data) return data;
     } catch(e) {
         console.log('Fetch error:', e.message);
     }
+
+    const titleMap = {
+        "cut-to-length": "M. S. Cut-to-length Sheets",
+        "slitting": "M. S. Slitted Coils",
+        "corrugation-profiling": "Corrugation and Profiling",
+        "zc-purlin": "C/Z Purlin: GI and HR",
+    };
+    const title = titleMap[slug] || slug.toUpperCase();
+    return {
+        attributes: {
+            name: title,
+            title1: title,
+            subtitle1: "Customized steel processing and merchanting services tailored to project needs.",
+            title2: "Service Overview",
+            title3: title,
+            slug: slug,
+            meta_title: title,
+            meta_description: "High quality steel services in Gujarat.",
+            newDescription: "Customized steel processing services including precision cutting, slitting, profiling, and purlin manufacturing.",
+            image: { data: [{ attributes: { url: "/images/services1.jpg" } }] },
+            coverImage: { data: { attributes: { url: "/images/services.jpg" } } }
+        }
+    };
 }
 
 export async function generateMetadata({ params }) {
