@@ -41,15 +41,33 @@ export async function generateStaticParams() {
 }
 
 export const getData = async (slug) => {
-    const apiUrl = process.env.API_URL;
+    const apiUrl = process.env.API_URL || 'https://www.vmetalsolutions.com';
     try {
         const response = await axios.get(`${apiUrl}/api/products?populate=*`);
-        const datas = response.data.data;
-        const data = datas.find(item => item.attributes.slug == slug)
-        return data
+        const datas = response.data?.data;
+        const data = datas?.find(item => item.attributes?.slug == slug || item.attributes?.slug == (slug === 'cr-crca' ? 'crca' : slug));
+        if (data) return data;
     } catch(e) {
         console.log('Fetch error:', e.message);
     }
+
+    const metaItem = meta.find(m => m.slug === slug || (slug === 'cr-crca' && m.slug === 'crca'));
+    const name = slugToCategoryMap[slug] || slug.toUpperCase();
+    return {
+        attributes: {
+            name: name,
+            title1: name,
+            subtitle1: metaItem?.description || "High quality steel products manufactured as per client specifications.",
+            title2: "Product Specifications",
+            title3: metaItem?.title || name,
+            slug: slug,
+            meta_title: metaItem?.title || name,
+            meta_description: metaItem?.description || "",
+            newDescription: metaItem?.description || "Premium steel solutions for construction, manufacturing, and engineering.",
+            image: { data: [{ attributes: { url: "/images/product1.png" } }] },
+            coverImage: { data: { attributes: { url: "/images/ourProducts1.jpg" } } }
+        }
+    };
 }
 
 export async function generateMetadata({ params }) {
