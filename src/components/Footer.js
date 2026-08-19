@@ -107,6 +107,7 @@ const Footer = () => {
                 <li><Link scroll={true} className={pathname === "/inquiry/" ? styles.active : null} href="/inquiry">Inquire Now</Link></li>
                 <li><Link scroll={true} className={pathname === "/contactus/" ? styles.active : null} href="/contactus">Contact Us</Link></li>
                 <li><Link scroll={true} className={pathname === "/privacy/" ? styles.active : null} href="/privacy">Privacy Policy</Link></li>
+                <li><a href="https://www.vmetalsolutions.com/admin/auth/login" target="_blank" rel="noopener noreferrer">Admin Login</a></li>
               </ul>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6 col-6">
