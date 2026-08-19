@@ -12,11 +12,17 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     const getProducts = async () => {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products?populate=*`, {
-            method: "GET",
-        });
-        const data = response.data.data;
-        setProducts(data);
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+        if (!apiUrl) return;
+        try {
+            const response = await axios.get(`${apiUrl}/products?populate=*`, {
+                method: "GET",
+            });
+            const data = response.data?.data;
+            if (data) setProducts(data);
+        } catch (e) {
+            console.log('Error fetching products:', e.message);
+        }
     }
 
     useEffect(() => {
