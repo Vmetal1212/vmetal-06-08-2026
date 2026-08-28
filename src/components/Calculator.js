@@ -482,16 +482,6 @@ const Calculator = ({
     "Round Pipes",
     "Nominal Bore Pipes",
   ]);
-  const mildSteelPipeCategories = new Set([
-    "ERW Pipe",
-    "Square Pipes",
-    "Round Pipes",
-    "Square Hollow Sections",
-    "Rectangle Hollow Sections",
-    "Circular Hollow Sections",
-    "Nominal Bore Pipes",
-  ]);
-
   const buildDimValuesString = (updatedDimensions) => {
     if (updatedDimensions?.sectionSize) {
       return updatedDimensions.sectionSize;
@@ -544,6 +534,36 @@ const Calculator = ({
     };
   }, [setDrop]);
 
+  // Shared weight/piece formatting so the live preview and the Calculate
+  // button never disagree on decimal precision.
+  const shouldAvoidRounding = category === "ERW Pipe";
+  const truncateDecimals = (value, decimals) => {
+    const factor = 10 ** decimals;
+    return Math.trunc(value * factor) / factor;
+  };
+  const formatWeightValue = (value) =>
+    shouldAvoidRounding
+      ? truncateDecimals(value, 3).toFixed(3)
+      : value.toFixed(category === "T-Sections (Angles)" ? 7 : 3);
+  const formatPieceValue = (value) =>
+    shouldAvoidRounding ? String(value) : value.toFixed(0);
+
+  // Recomputes the weight (in MT) from whatever dimensions are currently
+  // selected, without requiring "Calculate" to be clicked again. This keeps
+  // the displayed MT/Kg in sync the moment a size dropdown is changed,
+  // instead of showing the previous size's stale value.
+  const getLiveWeightMt = () => {
+    const categoryData = CATEGORIES[category];
+    if (!categoryData || inputMethod !== "Weight") return null;
+
+    const requiredDimensions = categoryData.getDimensions(inputMethod);
+    const hasAllDimensions = requiredDimensions.every((dim) => dimensions[dim]);
+    if (!hasAllDimensions) return null;
+
+    const rawWeightMt = categoryData.formula(dimensions);
+    return Number.isFinite(rawWeightMt) ? rawWeightMt : null;
+  };
+
   // Calculate weight
   const handleCalculate = () => {
     try {
@@ -568,18 +588,6 @@ const Calculator = ({
         setSuccess({ success: false, text: `Missing dimensions: ${convertCamelCaseToSpaced(missingDimensions.join(", "))}` });
         return;
       }
-
-      const shouldAvoidRounding = category === "ERW Pipe";
-      const truncateDecimals = (value, decimals) => {
-        const factor = 10 ** decimals;
-        return Math.trunc(value * factor) / factor;
-      };
-      const formatWeightValue = (value) =>
-        shouldAvoidRounding
-          ? truncateDecimals(value, 3).toFixed(3)
-          : value.toFixed(category === "T-Sections (Angles)" ? 7 : 3);
-      const formatPieceValue = (value) =>
-        shouldAvoidRounding ? String(value) : value.toFixed(0);
 
       if (inputMethod === "Sqft") {
         const rawSqft = formula(dimensions);
@@ -717,14 +725,12 @@ const Calculator = ({
   }
 
   const getDisplayedKgValue = () => {
-    if (!weight) return "0";
-
-    if (mildSteelPipeCategories.has(category)) {
-      const rawWeightMt = CATEGORIES[category]?.formula?.(dimensions);
-      if (Number.isFinite(rawWeightMt)) {
-        return (rawWeightMt * 1000).toFixed(3);
-      }
+    const liveWeightMt = getLiveWeightMt();
+    if (liveWeightMt != null) {
+      return (liveWeightMt * 1000).toFixed(3);
     }
+
+    if (!weight) return "0";
 
     return (Number(weight) * 1000).toFixed(3);
   };
@@ -1429,7 +1435,10 @@ const Calculator = ({
         <div className='d-flex align-items-start flex-column' style={{ gap: "10px" }}>
           {weight &&
             <h5>
-              <b>Weight:</b> {weight} MT or {getDisplayedKgValue()} kg
+              <b>Weight:</b> {(() => {
+                const liveWeightMt = getLiveWeightMt();
+                return liveWeightMt != null ? formatWeightValue(liveWeightMt) : weight;
+              })()} MT or {getDisplayedKgValue()} kg
             </h5>
           }
           {sqft &&
