@@ -1,38 +1,39 @@
-"use client"
+"use client";
 import React from "react";
 import styles from "@/app/styles/blogDetail.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import Image from "next/image";
-import blogStyle from '@/app/styles/blogs.module.css'
+import blogStyle from "@/app/styles/blogs.module.css";
 import { getStrapiMedia } from "@/utils/getStrapiMedia";
 
 const BlogDetail = ({ data, blogs }) => {
-
   function formatDate(isoDateString) {
     const date = new Date(isoDateString);
 
     // Define options for formatting
     const options = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
       hour12: true, // Ensures 12-hour format with AM/PM
     };
 
     // Format date using Intl.DateTimeFormat
-    return new Intl.DateTimeFormat('en-US', options).format(date);
+    return new Intl.DateTimeFormat("en-US", options).format(date);
   }
   const related = blogs.filter(
-    item =>
+    (item) =>
       // Check if product or service name matches
-      (item.attributes.product?.data?.attributes?.name === data.product?.data?.attributes?.name ||
-        item.attributes.service?.data?.attributes?.name === data.service?.data?.attributes?.name) &&
+      (item.attributes.product?.data?.attributes?.name ===
+        data.product?.data?.attributes?.name ||
+        item.attributes.service?.data?.attributes?.name ===
+          data.service?.data?.attributes?.name) &&
       // Ensure the title is not the same
-      item.attributes.title !== data.title
+      item.attributes.title !== data.title,
   );
 
   const getProductOrServiceName = (blog) => {
@@ -42,7 +43,7 @@ const BlogDetail = ({ data, blogs }) => {
     if (productName && serviceName) {
       return `${productName} - ${serviceName}`;
     } else {
-      return productName || serviceName || '';
+      return productName || serviceName || "";
     }
   };
 
@@ -56,7 +57,6 @@ const BlogDetail = ({ data, blogs }) => {
   const partOne = lines.slice(0, firstThird).join("\n");
   const partTwo = lines.slice(firstThird, secondThird).join("\n");
   const partThree = lines.slice(secondThird).join("\n");
-
 
   const truncateDescription = (text, maxLength = 130) => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
@@ -73,12 +73,9 @@ const BlogDetail = ({ data, blogs }) => {
   return (
     <>
       <div className={`row padd-x`}>
-
         <div className={`col-12 ${styles.detail}`}>
           <div>
-            <h1 className={styles.blogTitle}>
-              {data.title}
-            </h1>
+            <h1 className={styles.blogTitle}>{data.title}</h1>
             <p className={styles.blogMeta}>
               {getProductOrServiceName(data)} - {formatDate(data.publishedAt)}
             </p>
@@ -86,42 +83,56 @@ const BlogDetail = ({ data, blogs }) => {
             {/* Main Blog Image */}
 
             <div className={`${styles.blogMainImage}`}>
-              {data.image.data[0] && <Image width={1000} height={1000}
-                src={mainImageUrl}
-                alt={data.title}
-                className={`${styles.blogImage} img-fluid`}
-              />}
+              {data.image.data[0] && (
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={mainImageUrl}
+                  alt={data.title}
+                  className={`${styles.blogImage} img-fluid`}
+                />
+              )}
             </div>
 
             {/* Remaining Blog Sections */}
             <div className={styles.blogContent}>
               <Markdown>{partOne}</Markdown>
-              {data.image.data[1] && <Image
-                width={1000}
-                height={1000}
-                src={secondaryImageUrl}
-                alt={data.title}
-                className={`${styles.blogImage} img-fluid mb-3`}
-              />}
+              {data.image.data[1] && (
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={secondaryImageUrl}
+                  alt={data.title}
+                  className={`${styles.blogImage} img-fluid mb-3`}
+                />
+              )}
               <Markdown>{partTwo}</Markdown>
               <Link href={"/inquiry"} className="w-100 h-100 d-block">
-                <Image width={1000} height={1000} src="/images/blog_cta.jpg" className="w-100 h-100 mb-3 mt-1" alt="Call to Action - Vmetal solutions" />
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/images/blog_cta.jpg"
+                  className="w-100 h-100 mb-3 mt-1"
+                  alt="Call to Action - Vmetal solutions"
+                />
               </Link>
               <Markdown>{partThree}</Markdown>
             </div>
           </div>
         </div>
-        {related.length > 0 &&
+        {related.length > 0 && (
           <div className={styles.blogSidebarSection}>
             <h2>Related Blogs</h2>
+
             <div className="row">
               {related.map((blog, index) => {
-                const imageUrl = blog?.attributes?.image?.data?.[0]?.attributes?.url
+                const imageUrl = blog?.attributes?.image?.data?.[0]?.attributes
+                  ?.url
                   ? getStrapiMedia(blog.attributes.image.data[0].attributes.url)
                   : "/fallback.png";
 
                 return (
-                  <div className={`col-lg-4 col-md-6 mb-4 mt-4 `} key={index}>
+                  <div className="col-lg-4 col-md-6 mb-4 mt-4" key={index}>
                     <div className={blogStyle.blogImage_div}>
                       <img
                         src={imageUrl}
@@ -129,29 +140,53 @@ const BlogDetail = ({ data, blogs }) => {
                         className={blogStyle.blogImage}
                       />
                     </div>
+
                     <div className={blogStyle.blog_content}>
                       <div>
-                        <span>{getProductOrServiceName(blog.attributes)} - {formatDate(blog.attributes.publishedAt)}</span>
-                        <h3 className={blogStyle.blogTitle}>{blog.attributes.title.slice(0, 75)}{blog.attributes.title.length > 75 ? "..." : null}</h3>
+                        <span>
+                          {getProductOrServiceName(blog.attributes)} -{" "}
+                          {formatDate(blog.attributes.publishedAt)}
+                        </span>
+
+                        <h3 className={blogStyle.blogTitle}>
+                          {blog.attributes.title.slice(0, 75)}
+                          {blog.attributes.title.length > 75 ? "..." : null}
+                        </h3>
+
                         <p className={blogStyle.blogDescription}>
                           <Markdown>
                             {truncateDescription(blog.attributes.content)}
                           </Markdown>
                         </p>
                       </div>
-                      <Link href={`/blogs/${blog.attributes.slug}`} className="button">
+
+                      <Link
+                        href={`/blogs/${blog.attributes.slug}`}
+                        className="button"
+                      >
                         Read More
                       </Link>
                     </div>
                   </div>
                 );
               })}
-
             </div>
           </div>
-        }
-      </div>
+        )}
 
+        {/* ================= FAQ SECTION ================= */}
+        {data.blog_faq && (
+          <section style={{ marginTop: "100px" }}>
+            <div className={styles.blogFaq}>
+              <h2>Frequently Asked Questions</h2>
+
+              <div className={styles.blogFaqContent}>
+                <Markdown>{data.blog_faq}</Markdown>
+              </div>
+            </div>
+          </section>
+        )}
+      </div>
     </>
   );
 };
